@@ -20,6 +20,8 @@ import MetaMaskSDK from '@metamask/sdk';
 
 const sdk = new MetaMaskSDK({
   openDeeplink: link => {
+    console.log(link)
+    // https://metamask.app.link/connect?channelId=7998eba4-9199-4317-a14b-ebc987be3595&comm=socket&pubkey=0311a82b069999a1cc5b78338d002febd5991b65d32f7499738c6c2a1fc5cfe6c6
     Linking.openURL(link);
   },
   timer: BackgroundTimer,
